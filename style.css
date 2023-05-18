@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #1a2a32;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+/* Main style */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: 40px repeat(2, 80px) 40px;
+  gap: 5px;
+}
+
+/* alert */
+.hidden {
+  display: none !important;
+}
+.alertBenar {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border: 1px solid #badbcc;
+  border-radius: 0.5rem;
+  height: 50px;
+}
+.alertSalah {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #842029;
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  border-radius: 0.5rem;
+  height: 50px;
+}
+/* Kotak */
+
+.kotak {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.generator {
+  background-color: #2e4756;
+  color: #d3d3d3;
+}
+
+.jawaban {
+  background-color: #d3d3d3;
+  color: #2e4756;
+}
+
+/* button */
+
+.gn {
+  background-color: #d3d3d3;
+  grid-column: 1/6;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.As {
+  background-color: #d3d3d3;
+  grid-column: 3/4;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover,
+.jawaban:hover {
+  background-color: #9ba4b5;
+  cursor: pointer;
+}
